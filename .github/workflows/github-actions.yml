@@ -5,8 +5,8 @@ on: workflow_dispatch
     #- cron: 40 * * * *
 
 jobs:
-  Explore-GitHub-Actions:
+  Trigger Mastobot:
     runs-on: ubuntu-latest
     steps:
       - name: run run.php
-        run: php /run.php
+        run: php ./run.php
