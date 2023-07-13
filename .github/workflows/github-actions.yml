@@ -9,4 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: run run.php
-        run: php run.php
+        run: php /run.php
