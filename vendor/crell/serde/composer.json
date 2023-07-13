@@ -1,0 +1,58 @@
+{
+    "name": "crell/serde",
+    "type": "library",
+    "description": "A general purpose serialization and deserialization library",
+    "keywords": [
+        "Serde",
+        "Database"
+    ],
+    "homepage": "https://github.com/Crell/Serde",
+    "license": "LGPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Larry Garfield",
+            "email": "larry@garfieldtech.com",
+            "homepage": "http://www.garfieldtech.com/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "~8.1",
+        "crell/attributeutils": "~0.8.0",
+        "crell/fp": ">= 0.3.3"
+    },
+    "require-dev": {
+        "phpbench/phpbench": "^1.1.2",
+        "phpstan/phpstan": "^1.0",
+        "phpunit/phpunit": "~9.0",
+        "symfony/yaml": "^5.3",
+        "vishnubob/wait-for-it": "dev-master"
+    },
+    "suggest": {
+        "symfony/yaml": "Enables serializing to/from YAML files."
+    },
+    "autoload": {
+        "psr-4": {
+            "Crell\\Serde\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Crell\\Serde\\": "tests",
+            "Crell\\Serde\\Benchmarks\\": "benchmarks"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "check-style": "phpcs -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests",
+        "fix-style": "phpcbf -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
