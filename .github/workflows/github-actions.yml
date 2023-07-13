@@ -1,0 +1,11 @@
+name: ooc-gensui cron
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on:
+  schedule:
+    - cron: 0 * * * *
+
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: php run.php
