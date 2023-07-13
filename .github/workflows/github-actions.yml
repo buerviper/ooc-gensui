@@ -2,7 +2,7 @@ name: ooc-gensui cron
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on:
   schedule:
-    - cron: 0 * * * *
+    - cron: 24 * * * *
 
 jobs:
   Explore-GitHub-Actions:
