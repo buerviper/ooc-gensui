@@ -28,4 +28,4 @@ jobs:
           # Setup popular tools globally.
           tools: # optional
       - name: run.php
-        run: php run.php
+        run: php r"https://github.com/buerviper/ooc-gensui/blob/main/run.php"
