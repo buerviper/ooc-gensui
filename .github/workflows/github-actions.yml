@@ -8,5 +8,8 @@ jobs:
   TriggerMastobot:
     runs-on: ubuntu-latest
     steps:
+      - name: Setup PHP with PECL extension
+        uses: shivammathur/setup-php@v2
+        php-version: '8.2'
       - name: run.php
         run: php ./run.php
