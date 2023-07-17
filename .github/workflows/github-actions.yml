@@ -29,5 +29,5 @@ jobs:
           tools: # optional
       - uses: actions/checkout@v2
       - name: run.php
-          run: |
-            php run.php
+         run: |
+           php run.php
