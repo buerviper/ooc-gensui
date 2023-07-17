@@ -27,7 +27,7 @@ jobs:
           coverage: # optional
           # Setup popular tools globally.
           tools: # optional
+      - uses: actions/checkout@v2
       - name: run.php
-        uses: actions/checkout@v2
-        run: |
-          php run.php
+          run: |
+            php run.php
