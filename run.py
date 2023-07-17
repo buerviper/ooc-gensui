@@ -1,4 +1,6 @@
 from mastodon import Mastodon
+import os, random
+
 
 # Create an instance of the Mastodon class
 mastodon = Mastodon(
@@ -7,4 +9,6 @@ mastodon = Mastodon(
 )
 
 # Post a new status update
-mastodon.status_post('Testititest')
+image = random.choice([x for x in os.listdir(".\images") if os.path.isfile(os.path.join(".\images", x))])
+
+ Mastodon.media_post(image, mime_type=None, description=None, focus=None, file_name=None, thumbnail=None, thumbnail_mime_type=None, synchronous=False)[source]
