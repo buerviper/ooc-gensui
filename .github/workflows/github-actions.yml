@@ -14,7 +14,7 @@ jobs:
         uses: shivammathur/setup-php@2.25.4
         with:
           # Setup PHP version.
-          php-version: 8.0
+          php-version: 8.1
           # Setup PHP version from a file.
           php-version-file: # optional
           # Setup PHP extensions.
