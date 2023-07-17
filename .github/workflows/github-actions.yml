@@ -16,7 +16,6 @@ jobs:
       - name: Install Dependencies
         run: |
           pip3 install Mastodon.py
-          pip3 install -r requirements.txt
       - uses: actions/checkout@v2
       - name: run.py
         run: python run.py
