@@ -29,4 +29,4 @@ jobs:
           tools: # optional
       - name: run.php
         run: |
-          php ./run.php
+          php run.php
