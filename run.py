@@ -11,5 +11,5 @@ mastodon = Mastodon(
 # Post a new status update
 image = random.choice([x for x in os.listdir("images") if os.path.isfile(os.path.join("images", x))])
 
-media = Mastodon.media_post(image, mime_type=None, description=None, focus=None, file_name=None, thumbnail=None, thumbnail_mime_type=None, synchronous=False)[source]
+media = Mastodon.media_post(media_file = image, mime_type=None, description=None, focus=None, file_name=None, thumbnail=None, thumbnail_mime_type=None, synchronous=False)[source]
 mastodon.status_post("#suikoden", media_ids=media)
