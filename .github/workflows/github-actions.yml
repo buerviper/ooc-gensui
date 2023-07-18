@@ -1,8 +1,8 @@
 name: ooc-gensui cron
 
-on: workflow_dispatch
-  #schedule:
-    #- cron: 40 * * * *
+on: 
+  schedule:
+    - cron: 08 01 * * *
 
 jobs:
   TriggerMastobot:
@@ -16,6 +16,7 @@ jobs:
       - name: Install Dependencies
         run: |
           pip3 install Mastodon.py
+          pip3 install pyyaml
       - uses: actions/checkout@v2
       - name: run.py
         run: python run.py
