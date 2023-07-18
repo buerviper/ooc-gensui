@@ -6,8 +6,8 @@ import yaml
 
 # Create an instance of the Mastodon class
 mastodon = Mastodon(
-    access_token=secret.MASTODON_ACCESS_TOKEN,
-    api_base_url='botsin.space'
+    access_token = os.environ['MASTODON_ACCESS_TOKEN'],
+    api_base_url = 'botsin.space'
 )
 
 def post_status_with_image(name, spoiler_warning = "False", status = "#suikoden", sensitivity = "False", language = "en"):
