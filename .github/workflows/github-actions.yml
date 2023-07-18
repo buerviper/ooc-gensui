@@ -1,8 +1,8 @@
 name: ooc-gensui cron
 
-on: workflow_dispatch
-  #schedule:
-   # - cron: 08 01 * * *
+on:
+  schedule:
+    - cron: 08 01 * * *
 
 jobs:
   TriggerMastobot:
