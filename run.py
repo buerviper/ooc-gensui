@@ -6,7 +6,7 @@ import yaml
 
 # Create an instance of the Mastodon class
 mastodon = Mastodon(
-    access_token='hhRvxq3zFpNPwe5V1qCb2ILZXZiXgXz-r25UtiYE_xA',
+    access_token=$MASTODON_ACCESS_TOKEN,
     api_base_url='botsin.space'
 )
 
