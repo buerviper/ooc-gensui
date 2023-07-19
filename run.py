@@ -4,12 +4,13 @@ import os
 import random
 import yaml
 
-# Create an instance of the Mastodon class
+# Access Mastodon instance
 mastodon = Mastodon(
     access_token = os.environ['MASTODON_ACCESS_TOKEN'],
     api_base_url = 'botsin.space'
 )
 
+# Function to post status with image
 def post_status_with_image(name, spoiler_warning = "False", status = "#suikoden", sensitivity = "False", language = "en"):
     description_file = open("images/descriptions/"+name+".yml", "r")
     description = yaml.load(description_file, Loader=yaml.FullLoader)
@@ -45,6 +46,13 @@ if name[-1].isdigit():
     name_1 = name[:-1]+"1"
     name_2 = name[:-1]+"2"
     name_list = [name_1, name_2]
+    # check if image 3 and 4 exist and add to list
+    if os.path.exists("images/"+name+"3.png):
+        name_3 = name[:-1]+"3"
+        name_list.append(name_3)
+        if os.path.exists("images/"+name+"4.png):
+            name_4 = name[:-1]+"4"
+            name_list.append(name_4)
     for x in name_list:
         media_description(x)
 else:
