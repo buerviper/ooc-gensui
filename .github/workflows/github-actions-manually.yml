@@ -1,7 +1,6 @@
 name: ooc-gensui manually
 
-on:
-  schedule: workflow_dispatch
+on: workflow_dispatch
 
 jobs:
   TriggerMastobot:
