@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="90774fa2-5363-4cd1-8d9a-f1d7197adeb2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/descriptions/suikoden-01-vincent-breakfast.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/descriptions/suikoden-01-vincent-peasant-stock.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/suikoden-01-vincent-breakfast.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/suikoden-01-vincent-peasant-stock.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/suikoden-tierkreis-diulf-touch-it.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/suikoden-tierkreis-diulf-touch-it.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mastobot.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
