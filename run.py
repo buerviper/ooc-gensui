@@ -4,6 +4,7 @@ import os
 import random
 import yaml
 
+
 # Access Mastodon instance
 mastodon = Mastodon(
     access_token=os.environ['MASTODON_ACCESS_TOKEN'],
