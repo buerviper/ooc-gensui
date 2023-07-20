@@ -30,8 +30,14 @@ def media_description(media):
     description = yaml.load(description_file, Loader=yaml.FullLoader)
     alt_text = description["description"]
     os.chdir("images")
-    filename = media + ".png"
-    post = mastodon.media_post(filename, "image/png", description=alt_text)
+    filename = media + file_extension
+    if file_extension == ".png":
+        file_format = "image/png"
+    elif file_extension == ".jpeg":
+        file_format = "image/jpeg"
+    elif file_extension == ".gif":
+        file_format = "image/gif"
+    post = mastodon.media_post(filename, file_format, description=alt_text)
     media_list.append(post["id"])
     os.chdir("..")
 
@@ -41,6 +47,9 @@ photo = random.choice([x for x in os.listdir("images") if os.path.isfile(os.path
 
 # Get name of photo without ending
 name = Path("images/" + photo).stem
+
+# Get file format of photo
+file_extension = Path(photo).suffix
 
 # Create an empty list for all the photos/media we want to add
 media_list = []
@@ -52,10 +61,10 @@ if name[-1].isdigit():
     name_2 = name[:-1] + "2"
     name_list = [name_1, name_2]
     # check if image 3 and 4 exist and add to list
-    if os.path.exists("images/" + name + "3.png"):
+    if os.path.exists("images/" + name[:-1] + "3.png"):
         name_3 = name[:-1] + "3"
         name_list.append(name_3)
-        if os.path.exists("images/" + name + "4.png"):
+        if os.path.exists("images/" + name[:-1] + "4.png"):
             name_4 = name[:-1] + "4"
             name_list.append(name_4)
     for x in name_list:
