@@ -48,6 +48,8 @@ photo = random.choice([x for x in os.listdir("images") if os.path.isfile(os.path
 # Get name of photo without ending
 name = Path("images/" + photo).stem
 
+print(name)
+
 # Get file format of photo
 file_extension = Path(photo).suffix
 
