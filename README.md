@@ -1,5 +1,5 @@
 # No Context Suikoden Mastodon bot
-This bot posts (more or less) random images from the Suikoden JRPG series to the Mastodon account [https://botsin.space/@oocgensui](https://botsin.space/@oocgensui). At the moment, it posts two pictures per day.
+This bot posts (more or less) random images from the Suikoden JRPG series to the Mastodon account <link href="https://botsin.space/@oocgensui" rel="me">. At the moment, it posts two pictures per day.
 
 ## Structure
 
