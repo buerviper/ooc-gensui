@@ -28,4 +28,13 @@ All images are used under a [Fair Use clause (Section 107 U.S. Copyright Law)](h
 
 Die Verwendung geschützter Materialien des bots verfolgt keine finanziellen Interessen, sondern dient einem dokumentarischen Zweck als Bildzitat nach [§ 51 UrhG](https://www.gesetze-im-internet.de/urhg/__51.html). 
 
-The No Context Suikoden Mastodon bot is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+Shield: [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
+
+The No Context Suikoden Mastodon bot is licensed under a
+[Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
+
+[![CC BY-SA 4.0][cc-by-sa-image]][cc-by-sa]
+
+[cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
+[cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
+[cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
