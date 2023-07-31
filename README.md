@@ -1,2 +1,31 @@
-# ooc-gensui
-No context Suikoden Mastodon bot ressources.
+# No Context Suikoden Mastodon bot
+This bot posts (more or less) random images from the Suikoden JRPG series to the Mastodon account [https://botsin.space/@oocgensui](https://botsin.space/@oocgensui). At the moment, it posts two pictures per day.
+
+## Structure
+
+The `/images` folder contains all the images from which the `run.py` script randomly selects one. The filenames follow the pattern `game-gamenumber-description-imagenumber`:
+* `game`: can be suikoden or suikogaiden. 
+* `gamenumber`: can be a number between `01` and `05`, `tierkreis` or `tsumuji` (for Tsumugareshi Hyakunen no Toki). `cardstories` and `pachisuro` will be added once pictures of these games will be added.
+* `description`: a meaningful description of the image, seperated by `-`. At the moment, there's not a real pattern, but it should include the character(s) involved in the image(s) and either the main points of the dialogue (if there's any) or of the picture in general.
+* `imagenumber` (''optional''): if there's a series of images which belong together and should be posted together, the imagenumber (value `1-4`) indicates the index of the image (i.e., imagenumber = 1 will be the first image in a post, 2 the second etc.).
+
+The `/image/descriptions` folder contains the images' metadata as `.yaml` files. It contains the following field:
+* `status`: The text of the post. Default is `"#suikoden #jrpg"`.
+* `spoiler_warning`: If the image needs a content warning, the text can be added. Default is `None` (does not need to be stated explicitly).
+* `description`: Alt-text of the image. Default is `"Screenshot of Suikoden."`
+* `language`: ISO 639-1 language code for the text in the image. Default is `en`.
+* `sensitivity`: Marks image as sensitive content. Default is `False`.
+
+## To do
+
+In addition to adding more images, the biggest to do is adding meaningful alt-text to every image which is currently lacking.
+
+# Copyright 
+
+All images (c) Konami 1995–2023. 
+
+All images are used under a [Fair Use clause (Section 107 U.S. Copyright Law)](https://www.copyright.gov/title17/92chap1.html#107) without commercial interests.
+
+Die Verwendung geschützter Materialien des bots verfolgt keine finanziellen Interessen, sondern dient einem dokumentarischen Zweck als Bildzitat nach [§ 51 UrhG](https://www.gesetze-im-internet.de/urhg/__51.html). 
+
+The No Context Suikoden Mastodon bot is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
