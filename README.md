@@ -18,7 +18,12 @@ The `/image/descriptions` folder contains the images' metadata as `.yaml` files.
 
 ## To do
 
+### Alt text
 In addition to adding more images, the biggest to do is adding meaningful alt-text to every image which is currently lacking.
+
+### HD images
+
+A lot of the images were taken (with permission) from the no context suikoden twitter account. This means that a lot of them are low definition, sometimes even photos from TVs. The goal is to have HD (as HD as it gets) screenshots for each post in the original aspect ratio of the games (4:3 for PS1 and PS2).
 
 # Copyright 
 
