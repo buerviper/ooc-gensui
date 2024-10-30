@@ -1,9 +1,7 @@
 from mastodon import Mastodon
 from pathlib import Path
 import os
-import random
-import yaml
-
+import datetime
 
 # Access Mastodon instance
 mastodon = Mastodon(
@@ -19,5 +17,4 @@ else:
     post = "heute ist nicht weihnachten"
 
 # Write a "Hello World!" post
-image = mastodon.status_post(post, # this is the only required argument. you can either give the filename directly or use the "media_file" argument.
-                            )
+image = mastodon.status_post(post, # this is the only required argument. you can either give the filename directly or use the "media_file" argument.)
