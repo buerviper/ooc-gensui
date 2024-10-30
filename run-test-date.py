@@ -16,5 +16,8 @@ if int(date.strftime("%d")) == 30 and int(date.strftime("%m")) == 11:
 else:
     post = "heute ist nicht weihnachten"
 
+print(date.strftime("%d")) 
+print(date.strftime("%m"))
+
 # Write a "Hello World!" post
 image = mastodon.status_post(post) # this is the only required argument. you can either give the filename directly or use the "media_file" argument.
