@@ -11,8 +11,8 @@ mastodon = Mastodon(
 
 date = datetime.datetime.now()
 
-if int(date.strftime("%d")) == 25 and int(date.strftime("%m")) == 10:
-    post = "Heute ist weihnachten"
+if int(date.strftime("%d")) == 30 and int(date.strftime("%m")) == 11:
+    post = "morgen ist halloween"
 else:
     post = "heute ist nicht weihnachten"
 
