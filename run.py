@@ -8,7 +8,7 @@ import yaml
 # Access Mastodon instance
 mastodon = Mastodon(
     access_token=os.environ['MASTODON_ACCESS_TOKEN'],
-    api_base_url='botsin.space'
+    api_base_url='mastodon.social'
 )
 
 
